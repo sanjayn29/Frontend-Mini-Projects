@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial,sans-serif;
+    background-color:deepskyblue;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:blue;
+}
+.box{
+    display:flex;
+    gap:10px;
+}
+input{
+    flex:1;
+    padding:14px;
+    font-size:16px;
+    border:3px solid #ccc;
+    outline:none;
+    border-radius: 10px;
+}
+input:focus{
+    border-color:blue;
+}
+#addbtn{
+    padding : 14px 20px;
+    border : none;
+    border-radius:10px;
+    cursor : pointer;
+    background-color:blue;
+    color:#fff;
+    font-size:16px;
+}
+#result{
+    margin-top : 30px;
+    display:flex;
+    flex-direction: column;
+    gap : 15px;
+}
+.task{
+    background-color:white;
+    padding:15px;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow : 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.task p{
+    font-size:16px;
+}
+
+.complete{
+    text-decoration:line-through;
+    opacity:0.6;
+}
+
+.btn{
+    display:flex;
+    gap:10px;
+}
+.cplbtn, .delbtn {
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+.cplbtn{
+    background-color:green;
+    color:#fff;
+}
+.delbtn{
+    background-color:red;
+    color:#fff;
+}
